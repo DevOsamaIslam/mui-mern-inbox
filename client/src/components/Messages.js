@@ -1,6 +1,5 @@
 import { useSelector } from "react-redux"
 import Message from "./Message"
-import './Messages.css'
 
 const Messages = () => {
 
