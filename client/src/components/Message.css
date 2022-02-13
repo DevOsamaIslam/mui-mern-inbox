@@ -1,0 +1,21 @@
+hr {
+	margin: 8px;
+}
+
+.unread {
+	background-color: coral;
+	padding: 3px;
+	text-align: center;
+	color: indigo;
+	font-size: 1.2rem;
+}
+
+.card {
+	background-color: indigo !important;
+	color: white !important;
+	margin: 16px !important;
+}
+
+.card button {
+	color: aqua;
+}

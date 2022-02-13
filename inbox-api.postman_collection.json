@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "e060afde-a6d3-4802-a1cc-1c74b96083fe",
+		"name": "inbox-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "change the read status",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"62053000d0de20e827b9db34\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/single/read",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"single",
+						"read"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/all",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a message by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/single/62053000d0de20e827b9db34",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"single",
+						"62053000d0de20e827b9db34"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset read status",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/unread",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"unread"
+					]
+				},
+				"description": "Change the isRead value for all messages to false"
+			},
+			"response": []
+		}
+	]
+}
