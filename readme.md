@@ -11,6 +11,10 @@
 
 `npm install`
 
+- Add mock messages to the database
+
+`node addMessages.js`
+
 - run the server
 
 `npm start`
