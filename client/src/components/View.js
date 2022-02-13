@@ -13,7 +13,11 @@ const View = () => {
 	// change its status to read
 	useEffect(() => dispatch(messageAction.read(id)), [])
 	if(message && message._id === id)
-		return <Message showAllContent={true} data={message} />
+		return (
+			<div className="messages-container">
+				<Message showAllContent={true} data={message} />
+			</div>
+		)
 	else {
 		// if the message does not exist in the store, 
 		// fetch it from the database using its id
