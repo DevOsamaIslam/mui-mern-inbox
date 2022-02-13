@@ -1,6 +1,6 @@
-import Message from './models/Message.js';
+import Message from './backend/models/Message.js';
 
-import { db } from './config.js'
+import { db } from './backend/config.js'
 db.connect
 
 Message.insertMany([
@@ -16,5 +16,11 @@ Message.insertMany([
 		subject: 'It\'s a wonderful day',
 		content: 'It\'s a perfect day for fishing, init?'
 	}
-]).then(data => console.log(data))
-	.catch(err => console.error(err))
+]).then(data => {
+	console.log('Done.');
+	process.exit(1)
+})
+	.catch(err => {
+		console.error(err)
+		process.exit(1)
+	})
